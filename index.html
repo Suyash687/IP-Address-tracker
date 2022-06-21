@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address tracking app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+</head>
+<body>
+    <div id="container">
+        <div id="formContainer">
+            <h2>IP Address tracker</h2>
+            <form action="">
+                <input type="text" id="inputIP" placeholder="Search for any IP address">
+                <button type="submit" id="btnSave">
+                    <img src="./images/icon-arrow.svg" alt="arrowbtn">
+                </button>
+            </form>
+        </div>
+        <div id="display">
+            <div id="dis">
+                <div class="bx" id="bx1">
+                    <p class="txt">IP Address</p>
+                    <div id="ipAddress"></div>
+                </div>
+                <div class="bx" id="bx2">
+                    <p class="txt">Location</p>
+                    <div id="location"></div>
+                </div>
+                <div class="bx" id="bx3">
+                    <p class="txt">Time zone</p>
+                    <div id="timeZone"></div>
+                </div>
+                <div class="bx" id="bx4">
+                    <p class="txt">ISP</p>
+                    <div id="isp"></div>
+                </div>
+            </div>
+        </div>
+        <div id="mapContainer">
+            
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>
